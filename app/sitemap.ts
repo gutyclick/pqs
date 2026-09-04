@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next";import {posts,products,site} from "@/data/site";
+export default function sitemap():MetadataRoute.Sitemap{const paths=['','/about','/products','/gallery','/blog','/contact',...products.map(p=>`/products/${p.slug}`),...posts.map(p=>`/blog/${p.slug}`)];return paths.map(path=>({url:`${site.url}${path}`,lastModified:new Date(),changeFrequency:path.startsWith('/blog/')?'monthly':'weekly',priority:path===''?1:.7}))}

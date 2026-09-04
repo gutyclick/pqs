@@ -1,0 +1,3 @@
+import type {Metadata} from "next";import {PageHero} from "@/components/layout/PageHero";import {GalleryGrid} from "@/components/gallery/GalleryGrid";
+export const metadata:Metadata={title:"Gallery",description:"Explore Panama Squash Co. fields, products, harvest and agricultural operations in Panama.",alternates:{canonical:"/gallery"}};
+export default function GalleryPage(){return <><PageHero eyebrow="Field notes" title="Agriculture, up close." description="A view into our products, fields and the people and processes behind every harvest."/><section className="section"><div className="container"><GalleryGrid/></div></section></>}

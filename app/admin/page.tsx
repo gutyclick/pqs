@@ -1,1 +1,1 @@
-import type{Metadata}from"next";import{AdminPanel}from"@/components/admin/AdminPanel";export const metadata:Metadata={title:"Administración",robots:{index:false,follow:false}};export default function AdminPage(){return <div className="admin-shell"><AdminPanel/></div>}
+import type{Metadata}from"next";import{ContentStudio}from"@/components/admin/ContentStudio";export const metadata:Metadata={title:"Administración",robots:{index:false,follow:false}};export default function AdminPage(){return <div className="admin-shell"><ContentStudio/></div>}

@@ -31,5 +31,6 @@ export const watermelonGallery=[
 {src:"/sandia/8.jpg",alt:"Selección de sandías por calidad"},
 {src:"/sandia/9.jpg",alt:"Sandías frescas de producción panameña"},
 {src:"/sandia/10.jpg",alt:"Detalle de la producción de sandía Quetzali"},
-{src:"/sandia/11.jpg",alt:"Sandías listas para su preparación y despacho"}
+{src:"/sandia/11.jpg",alt:"Sandías listas para su preparación y despacho"},
+{src:"/sandia/12.png",alt:"Producción de sandía Quetzali de Panama Squash"}
 ];

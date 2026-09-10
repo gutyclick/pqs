@@ -2,7 +2,7 @@ export const site={name:"Panama Squash Co.",url:process.env.NEXT_PUBLIC_SITE_URL
 export type Product={slug:string;name:string;scientific:string;image:string;description:string;features:string[]};
 export const products:Product[]=[
 {slug:"squash",name:"Calabaza",scientific:"Cucurbita maxima",image:"/calabaza/9.jpg",description:"Variedades seleccionadas por su excelente textura y sabor, preparadas para mercados nacionales e internacionales.",features:["Arjuna F1, Leela 104 F1, Butternut y Musquée de Provence","Sacos de exportación de 14 kg","Aprox. 1,500 sacos / 21,000 kg por contenedor"]},
-{slug:"watermelon",name:"Sandía Quetzali",scientific:"Citrullus lanatus",image:"https://panamasquash.com/wp-content/uploads/2023/09/IMG-20230928-WA0129-1030x773.jpg",description:"Una variedad con semilla reconocida por su color intenso y su sabor fresco y definido.",features:["Excelente sabor y color","Variedad con semilla","Tamaños 3, 4, 5, 6 y 7 por caja"]},
+{slug:"watermelon",name:"Sandía Quetzali",scientific:"Citrullus lanatus",image:"/sandia/1.jpeg",description:"Una variedad con semilla reconocida por su color intenso y su sabor fresco y definido.",features:["Excelente sabor y color","Variedad con semilla","Tamaños 3, 4, 5, 6 y 7 por caja"]},
 {slug:"pineapple",name:"Piña",scientific:"Ananas comosus",image:"https://panamasquash.com/wp-content/uploads/2023/09/IMG_8482-1-1030x773.jpg",description:"Fruta naturalmente dulce, seleccionada por su color, textura y presentación consistente.",features:["Dulzura natural","Excelente sabor, color y textura","Múltiples tamaños disponibles"]}];
 export const gallery=[
 {src:"https://panamasquash.com/wp-content/uploads/2023/09/IMG-20230928-WA0142-773x1030.jpg",alt:"Productos agrícolas frescos de Panamá"},{src:"https://panamasquash.com/wp-content/uploads/2023/09/IMG-20230928-WA0129-1030x773.jpg",alt:"Sandías seleccionadas para empaque"},{src:"https://panamasquash.com/wp-content/uploads/2023/09/IMG_20230303_172330-1030x773.jpg",alt:"Campo de producción agrícola en Panamá"},{src:"https://panamasquash.com/wp-content/uploads/2023/09/IMG-20230928-WA0138-1030x773.jpg",alt:"Cosecha preparada para selección de calidad"},{src:"https://panamasquash.com/wp-content/uploads/2023/09/IMG_8482-1-1030x773.jpg",alt:"Producción de piña fresca"}];
@@ -19,4 +19,17 @@ export const squashGallery=[
 {src:"/calabaza/7.jpg",alt:"Calabazas butternut seleccionadas en planta"},
 {src:"/calabaza/8.jpg",alt:"Detalle de calabazas butternut listas para selección"},
 {src:"/calabaza/10.jpg",alt:"Sacos de calabaza almacenados para despacho"}
+];
+
+export const watermelonGallery=[
+{src:"/sandia/2.jpeg",alt:"Cultivo de sandía Quetzali en Panamá"},
+{src:"/sandia/3.jpg",alt:"Sandías Quetzali cosechadas en el campo"},
+{src:"/sandia/4.jpeg",alt:"Detalle de sandía Quetzali lista para cosecha"},
+{src:"/sandia/5.jpeg",alt:"Planta de sandía en producción"},
+{src:"/sandia/6.jpeg",alt:"Cosecha de sandías seleccionadas"},
+{src:"/sandia/7.jpeg",alt:"Sandías Quetzali preparadas para su manejo"},
+{src:"/sandia/8.jpg",alt:"Selección de sandías por calidad"},
+{src:"/sandia/9.jpg",alt:"Sandías frescas de producción panameña"},
+{src:"/sandia/10.jpg",alt:"Detalle de la producción de sandía Quetzali"},
+{src:"/sandia/11.jpg",alt:"Sandías listas para su preparación y despacho"}
 ];

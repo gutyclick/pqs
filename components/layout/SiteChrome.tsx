@@ -1,0 +1,3 @@
+"use client";
+import{usePathname}from"next/navigation";import{MessageCircle}from"lucide-react";import{Navbar}from"@/components/layout/Navbar";import{Footer}from"@/components/layout/Footer";import{site}from"@/data/site";
+export function SiteChrome({children}:{children:React.ReactNode}){const pathname=usePathname();if(pathname.startsWith("/admin"))return <main>{children}</main>;return <><Navbar/><main>{children}</main><Footer/><a href={site.whatsapp} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" className="fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:-translate-y-1"><MessageCircle size={21}/></a></>}

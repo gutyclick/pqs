@@ -6,7 +6,7 @@ import{ProductSlider}from"@/components/products/ProductSlider";
 import{Reveal}from"@/components/ui/Reveal";
 import{additionalProducts}from"@/data/site";
 
-export const metadata:Metadata={title:"Plátano, papaya, yuca y melón",description:"Conoce nuestra oferta de plátano, papaya, yuca parafinada y melón Golden Honeydew producidos en Panamá.",alternates:{canonical:"/products/otros"}};
+export const metadata:Metadata={title:"Plantain, papaya, cassava and melon",description:"Discover our plantain, papaya, waxed cassava and Golden Honeydew melon grown in Panama.",alternates:{canonical:"/products/otros"}};
 
 const standards=[
   {icon:Sprout,title:"Origen cuidado",text:"Trabajamos cerca del campo para cuidar el producto desde su origen."},

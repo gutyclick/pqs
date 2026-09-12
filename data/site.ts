@@ -6,8 +6,27 @@ export const products:Product[]=[
 {slug:"pineapple",name:"Piña",scientific:"Ananas comosus",image:"/piña/portada_pina.png",description:"Fruta naturalmente dulce, seleccionada por su color, textura y presentación consistente.",features:["Dulzura natural","Excelente sabor, color y textura","Calibres del 6 al 10"]}];
 export const gallery=[
 ...Array.from({length:13},(_,i)=>({src:`/general/panama-squash-co-galeria-${String(i+1).padStart(2,"0")}${["jpeg","jpeg","jpeg","jpg","jpg","jpg","jpg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"][i]===undefined?"":"."+["jpeg","jpeg","jpeg","jpg","jpg","jpg","jpg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"][i]}`,alt:"Producción agrícola de Panama Squash Co. en Panamá"})),
-...Array.from({length:7},(_,i)=>({src:`/calabaza/panama-squash-co-calabaza-producto-${String(i+4).padStart(2,"0")}.${["jpg","jpeg","jpeg","jpeg","jpg","jpg","jpg"][i]}`,alt:"Producción y selección de calabaza en Panamá"})),
-...Array.from({length:11},(_,i)=>({src:`/sandia/panama-squash-co-sandia-producto-${String(i+4).padStart(2,"0")}.${["png","jpg","jpg","jpeg","jpg","jpeg","jpeg","jpeg","jpeg","jpg","jpg"][i]}`,alt:"Cultivo y selección de sandía en Panamá"})),
+...[
+  "/calabaza/panama-squash-co-calabaza-producto-01.jpeg",
+  "/calabaza/panama-squash-co-calabaza-producto-02.jpeg",
+  "/calabaza/panama-squash-co-calabaza-producto-03.jpg",
+  "/calabaza/panama-squash-co-calabaza-producto-04.jpg",
+  "/calabaza/panama-squash-co-calabaza-producto-06.jpeg",
+  "/calabaza/panama-squash-co-calabaza-producto-07.jpeg",
+  "/calabaza/panama-squash-co-calabaza-producto-09.jpg"
+].map(src=>({src,alt:"Producción y selección de calabaza en Panamá"})),
+...[
+  "/sandia/panama-squash-co-sandia-producto-02.jpg",
+  "/sandia/panama-squash-co-sandia-producto-03.jpg",
+  "/sandia/panama-squash-co-sandia-producto-04.png",
+  "/sandia/panama-squash-co-sandia-producto-07.jpeg",
+  "/sandia/panama-squash-co-sandia-producto-08.jpg",
+  "/sandia/panama-squash-co-sandia-producto-09.jpeg",
+  "/sandia/panama-squash-co-sandia-producto-10.jpeg",
+  "/sandia/panama-squash-co-sandia-producto-11.jpeg",
+  "/sandia/panama-squash-co-sandia-producto-12.jpeg",
+  "/sandia/panama-squash-co-sandia-producto-14.jpg"
+].map(src=>({src,alt:"Cultivo y selección de sandía en Panamá"})),
 ...Array.from({length:2},(_,i)=>({src:`/piña/panama-squash-co-piña-producto-0${i+4}.jpg`,alt:"Piñas listas para selección y despacho"})),
 {src:"/platano/panama-squash-co-platano-producto-04.jpg",alt:"Plátanos seleccionados por Panama Squash Co."},
 ...Array.from({length:5},(_,i)=>({src:`/papaya/panama-squash-co-papaya-producto-${String(i+4).padStart(2,"0")}.${["jpg","jpeg","jpg","jpg","jpeg"][i]}`,alt:"Papayas seleccionadas por Panama Squash Co."})),
@@ -17,15 +36,15 @@ export const posts=[
 {slug:"a-quality-first-approach",category:"Producción",date:"28 septiembre 2023",title:"Calidad desde el campo hasta el empaque",excerpt:"Cómo una selección cuidadosa protege cada producto durante su recorrido.",image:gallery[3].src},{slug:"panama-strategic-origin",category:"Exportación",date:"21 septiembre 2023",title:"Panamá: origen estratégico para el comercio agrícola",excerpt:"Condiciones tropicales y una ubicación conectada con mercados globales.",image:gallery[2].src},{slug:"know-your-squash",category:"Productos",date:"14 septiembre 2023",title:"Conoce nuestras variedades de calabaza",excerpt:"Una mirada a las cualidades y formatos disponibles para compradores.",image:products[0].image}];
 
 export const squashGallery=[
-{src:"/calabaza/panama-squash-co-calabaza-producto-01.jpeg",alt:"Calabazas seleccionadas para su manejo"},
-{src:"/calabaza/panama-squash-co-calabaza-producto-02.jpeg",alt:"Calabazas recibidas en planta"},
-{src:"/calabaza/panama-squash-co-calabaza-producto-03.jpg",alt:"Selección de calabazas de Panama Squash Co."}
+{src:"/calabaza/panama-squash-co-calabaza-producto-08.jpg",alt:"Calabazas seleccionadas para su manejo"},
+{src:"/calabaza/panama-squash-co-calabaza-producto-10.jpg",alt:"Calabazas recibidas en planta"},
+{src:"/calabaza/panama-squash-co-calabaza-producto-05.jpeg",alt:"Selección de calabazas de Panama Squash Co."}
 ];
 
 export const watermelonGallery=[
 {src:"/sandia/panama-squash-co-sandia-producto-01.jpeg",alt:"Cultivo de sandía en Panamá"},
-{src:"/sandia/panama-squash-co-sandia-producto-02.jpg",alt:"Sandías cosechadas en el campo"},
-{src:"/sandia/panama-squash-co-sandia-producto-03.jpg",alt:"Detalle de sandía seleccionada"}
+{src:"/sandia/panama-squash-co-sandia-producto-05.jpg",alt:"Sandías cosechadas en el campo"},
+{src:"/sandia/panama-squash-co-sandia-producto-06.jpg",alt:"Detalle de sandía seleccionada"}
 ];
 
 export const pineappleGallery=[

@@ -5,7 +5,7 @@ export const products:Product[]=[
 {slug:"watermelon",name:"Sandía",scientific:"Citrullus lanatus",image:"/sandia/portada_sandia.png",description:"Sandías seleccionadas por su color intenso, frescura y sabor definido, preparadas para distintos mercados.",features:["Variedades con semilla y sin semilla","Calibres 3, 4, 5 y 6","Bines de 36, 45 y 60 unidades","Cantidad por contenedor: 1,320 cajas de 16 kg o 60 bines de 350 a 400 kg"]},
 {slug:"pineapple",name:"Piña",scientific:"Ananas comosus",image:"/piña/portada_pina.png",description:"Fruta naturalmente dulce, seleccionada por su color, textura y presentación consistente.",features:["Dulzura natural","Excelente sabor, color y textura","Calibres del 6 al 10"]}];
 export const gallery=[
-...Array.from({length:13},(_,i)=>({src:`/general/panama-squash-co-galeria-${String(i+1).padStart(2,"0")}${["jpeg","jpeg","jpeg","jpg","jpg","jpg","jpg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"][i]===undefined?"":"."+["jpeg","jpeg","jpeg","jpg","jpg","jpg","jpg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"][i]}`,alt:"Producción agrícola de Panama Squash Co. en Panamá"})),
+...Array.from({length:13},(_,i)=>({src:`/general/panama-squash-co-galeria-${String(i+1).padStart(2,"0")}${["jpeg","jpeg","jpeg","jpg","jpg","jpg","jpg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"][i]===undefined?"":"."+["jpeg","jpeg","jpeg","jpg","jpg","jpg","jpg","jpeg","jpeg","jpeg","jpeg","jpeg","jpeg"][i]}`,alt:"Producción agrícola de Panama Squash Co. en Panamá"})).filter((_,i)=>i!==3),
 ...[
   "/calabaza/panama-squash-co-calabaza-producto-01.jpeg",
   "/calabaza/panama-squash-co-calabaza-producto-02.jpeg",

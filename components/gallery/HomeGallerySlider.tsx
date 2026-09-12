@@ -35,10 +35,10 @@ export function HomeGallerySlider({images}:{images:GalleryImage[]}){
       </figure>)}
     </div>
     <div className="mt-6 flex items-center justify-between">
-      <p className="text-sm text-[var(--muted)]">Desliza para recorrer el campo, la selección y el empaque.</p>
+      <p className="text-sm text-[var(--muted)]">Swipe through our fields, selection and packing process.</p>
       <div className="flex shrink-0 gap-2 pl-4">
-        <button type="button" onClick={()=>move(-1)} aria-label="Ver imágenes anteriores" className="grid h-12 w-12 place-items-center rounded-full border border-[var(--line)] bg-white text-[var(--brand-dark)] transition hover:-translate-x-0.5 hover:bg-[var(--brand-light)]"><ArrowLeft size={18}/></button>
-        <button type="button" onClick={()=>move(1)} aria-label="Ver más imágenes" className="grid h-12 w-12 place-items-center rounded-full bg-[var(--brand-dark)] text-white transition hover:translate-x-0.5"><ArrowRight size={18}/></button>
+        <button type="button" onClick={()=>move(-1)} aria-label="View previous images" className="grid h-12 w-12 place-items-center rounded-full border border-[var(--line)] bg-white text-[var(--brand-dark)] transition hover:-translate-x-0.5 hover:bg-[var(--brand-light)]"><ArrowLeft size={18}/></button>
+        <button type="button" onClick={()=>move(1)} aria-label="View more images" className="grid h-12 w-12 place-items-center rounded-full bg-[var(--brand-dark)] text-white transition hover:translate-x-0.5"><ArrowRight size={18}/></button>
       </div>
     </div>
   </div>;

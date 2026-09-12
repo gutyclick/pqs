@@ -27,7 +27,7 @@ export function ProductSlider({name,cover,images}:{name:string;cover:string;imag
     <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-[#082d22]/80 to-transparent p-5 pt-16 text-white">
       <span className="eyebrow">{String(index+1).padStart(2,"0")} / {String(slides.length).padStart(2,"0")}</span>
       <div className="flex gap-2">
-        <button type="button" aria-label={`Imagen anterior de ${name}`} disabled={index===0} onClick={()=>go(index-1)} className="grid h-11 w-11 place-items-center rounded-full bg-white text-[var(--brand-dark)] transition hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"><ArrowLeft size={18}/></button>
+        <button type="button" aria-label={`Previous image of ${name}`} disabled={index===0} onClick={()=>go(index-1)} className="grid h-11 w-11 place-items-center rounded-full bg-white text-[var(--brand-dark)] transition hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"><ArrowLeft size={18}/></button>
         <button type="button" aria-label={`Siguiente imagen de ${name}`} disabled={index===slides.length-1} onClick={()=>go(index+1)} className="grid h-11 w-11 place-items-center rounded-full bg-[var(--brand-accent)] text-[var(--brand-dark)] transition hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"><ArrowRight size={18}/></button>
       </div>
     </div>

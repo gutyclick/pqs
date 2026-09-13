@@ -4,7 +4,7 @@ import{createContext,useContext,useEffect,useState}from"react";
 import{usePathname}from"next/navigation";
 
 type Language="en"|"es";
-const LanguageContext=createContext<{language:Language;setLanguage:(language:Language)=>void}>({language:"en",setLanguage:()=>{}});
+const LanguageContext=createContext<{language:Language;setLanguage:(language:Language)=>void}>({language:"es",setLanguage:()=>{}});
 
 const translations:Record<string,string>={
   "El milagro de la naturaleza":"Nature's miracle","Inicio":"Home","Nosotros":"About","Productos":"Products","Galería":"Gallery","Noticias":"News","Contacto":"Contact","Solicitar información":"Request information","Cerrar menú":"Close menu","Abrir menú":"Open menu",
@@ -56,7 +56,7 @@ function translateText(root:Node,language:Language){
 }
 
 export function LanguageProvider({children}:{children:React.ReactNode}){
-  const pathname=usePathname();const[language,setLanguageState]=useState<Language>("en");
+  const pathname=usePathname();const[language,setLanguageState]=useState<Language>("es");
   function setLanguage(next:Language){setLanguageState(next);localStorage.setItem("panama-squash-language",next)}
   useEffect(()=>{const saved=localStorage.getItem("panama-squash-language");if(saved==="es"||saved==="en")queueMicrotask(()=>setLanguageState(saved))},[]);
   useEffect(()=>{if(pathname.startsWith("/admin"))return;document.documentElement.lang=language;translateText(document.body,language);const observer=new MutationObserver(records=>records.forEach(record=>{if(record.type==="characterData")translateText(record.target,language);else record.addedNodes.forEach(node=>translateText(node,language))}));observer.observe(document.body,{childList:true,characterData:true,subtree:true});return()=>observer.disconnect()},[language,pathname]);

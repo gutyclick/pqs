@@ -4,9 +4,7 @@ import{useEffect,useRef,useState}from"react";
 import{ArrowRight,CheckCircle2,ShieldCheck}from"lucide-react";
 
 const fields=[{name:"name",label:"Name",required:true,type:"text",auto:"name",maxLength:120},{name:"company",label:"Company",required:false,type:"text",auto:"organization",maxLength:160},{name:"country",label:"Country",required:true,type:"text",auto:"country-name",maxLength:100},{name:"email",label:"Email address",required:true,type:"email",auto:"email",maxLength:200},{name:"phone",label:"Phone",required:false,type:"tel",auto:"tel",maxLength:60}];
-const turnstileSiteKey=process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
-
-export function ContactForm(){
+export function ContactForm({turnstileSiteKey}:{turnstileSiteKey?:string}){
   const[state,setState]=useState<"idle"|"loading"|"success"|"error">("idle");
   const[error,setError]=useState("");
   const startedAt=useRef(0);
